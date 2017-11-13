@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.ui;
 
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
+
+import com.example.usuario.ejerciciosad_t2.R;
+import com.example.usuario.ejerciciosad_t2.utils.TareaAsincrona;
+import com.example.usuario.ejerciciosad_t2.utils.Conexion;
+import com.example.usuario.ejerciciosad_t2.utils.Resultado;
 
 public class ConexionHTTPActivity extends AppCompatActivity implements View.OnClickListener{
 

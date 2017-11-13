@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -9,6 +9,9 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import com.example.usuario.ejerciciosad_t2.R;
+import com.example.usuario.ejerciciosad_t2.utils.Memoria;
+import com.example.usuario.ejerciciosad_t2.utils.Resultado;
 import com.nbsp.materialfilepicker.ui.FilePickerActivity;
 
 public class CodificacionActivity extends AppCompatActivity implements View.OnClickListener {

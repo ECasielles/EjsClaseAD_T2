@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

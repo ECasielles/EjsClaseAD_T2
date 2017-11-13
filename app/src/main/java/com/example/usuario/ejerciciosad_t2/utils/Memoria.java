@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.utils;
 
 import android.app.Activity;
 import android.content.Context;

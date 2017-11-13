@@ -1,7 +1,9 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.usuario.ejerciciosad_t2.R;
 
 public class DescargaImagenesArchivosActivity extends AppCompatActivity {
 

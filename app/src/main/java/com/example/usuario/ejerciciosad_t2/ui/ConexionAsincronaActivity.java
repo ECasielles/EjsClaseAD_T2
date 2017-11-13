@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.ui;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,21 +9,25 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
+import com.example.usuario.ejerciciosad_t2.R;
+import com.example.usuario.ejerciciosad_t2.utils.TareaAsincrona;
+import com.example.usuario.ejerciciosad_t2.utils.Conexion;
+
 public class ConexionAsincronaActivity extends AppCompatActivity implements View.OnClickListener{
 
     EditText edtUrl;
     RadioButton rbtnJava, rbtnApache, rbtnAAHC;
     Button btnConectar;
-    WebView webvWeb;
-    TextView txvResultado;
-    long inicio, fin;
+    public WebView webvWeb;
+    public TextView txvResultado;
+    public long inicio;
     TareaAsincrona miTarea;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conexion_asincrona);
+        iniciar();
     }
     private void iniciar() {
         edtUrl = (EditText) findViewById(R.id.edtUrl);
@@ -43,13 +47,14 @@ public class ConexionAsincronaActivity extends AppCompatActivity implements View
         inicio = System.currentTimeMillis();
 
         if (v == btnConectar) {
-                if (rbtnJava.isChecked())
-                    tipo = Conexion.JAVA;
-                miTarea = new TareaAsincrona(this);
-                miTarea.execute(tipo, texto);
-            }
-            txvResultado.setText("Esperando...");
+            if (rbtnJava.isChecked())
+                tipo = Conexion.JAVA;
+            miTarea = new TareaAsincrona(this);
+            miTarea.execute(tipo, texto);
         }
+        txvResultado.setText("Esperando...");
     }
+
+
 }
 

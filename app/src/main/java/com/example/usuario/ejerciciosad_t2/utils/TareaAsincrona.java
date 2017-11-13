@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2;
+package com.example.usuario.ejerciciosad_t2.utils;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.example.usuario.ejerciciosad_t2.ui.ConexionAsincronaActivity;
 
 public class TareaAsincrona extends AsyncTask<String, Integer, Resultado> {
     private ProgressDialog progreso;
