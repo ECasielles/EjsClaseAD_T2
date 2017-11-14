@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -16,18 +17,23 @@
         android:theme="@style/AppTheme"
         >
         <activity android:name=".ui.MainActivity">
+        </activity>
+        <activity android:name=".ui.CodificacionActivity"/>
+        <activity android:name=".ui.AdministradorArchivosActivity"/>
+        <activity android:name=".ui.ConexionAAHCActivity">
+
+        </activity>
+        <activity android:name=".ui.ConexionAsincronaActivity">
+
+        </activity>
+        <activity android:name=".ui.ConexionHTTPActivity"/>
+        <activity android:name=".ui.ConexionVolleyActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.CodificacionActivity"/>
-        <activity android:name=".ui.AdministradorArchivosActivity"/>
-        <activity android:name=".ui.ConexionAAHCActivity"/>
-        <activity android:name=".ui.ConexionAsincronaActivity"/>
-        <activity android:name=".ui.ConexionHTTPActivity"/>
-        <activity android:name=".ui.ConexionVolleyActivity"/>
         <activity android:name=".ui.DescargaImagenesArchivosActivity"/>
         <activity android:name=".ui.SubirArchivosActivity"/>
     </application>

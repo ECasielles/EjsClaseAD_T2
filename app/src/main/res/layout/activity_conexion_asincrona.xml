@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:text="https://portadaalta.club/cursos/"
+        android:text="https://www.meneame.net"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txvUrl"
@@ -72,15 +72,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Apache"
-            />
-
-        <RadioButton
-            android:id="@+id/rbtnAAHC"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:checked="true"
-            android:text="AAHC"
             />
     </RadioGroup>
 
