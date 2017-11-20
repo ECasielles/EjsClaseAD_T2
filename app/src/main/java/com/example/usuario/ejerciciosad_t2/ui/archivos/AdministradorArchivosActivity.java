@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2.ui;
+package com.example.usuario.ejerciciosad_t2.ui.archivos;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

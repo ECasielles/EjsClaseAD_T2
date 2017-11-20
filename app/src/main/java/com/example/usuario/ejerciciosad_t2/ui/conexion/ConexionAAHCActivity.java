@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2.ui;
+package com.example.usuario.ejerciciosad_t2.ui.conexion;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;

@@ -1,15 +1,15 @@
-package com.example.usuario.ejerciciosad_t2.ui;
+package com.example.usuario.ejerciciosad_t2.ui.conexion;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.usuario.ejerciciosad_t2.R;
 
-public class DescargaImagenesArchivosActivity extends AppCompatActivity {
+public class SubirArchivosActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_descarga_imagenes_archivos);
+        setContentView(R.layout.activity_subir_archivos);
     }
 }

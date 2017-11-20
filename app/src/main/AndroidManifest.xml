@@ -16,26 +16,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         >
-        <activity android:name=".ui.MainActivity">
-        </activity>
-        <activity android:name=".ui.CodificacionActivity"/>
-        <activity android:name=".ui.AdministradorArchivosActivity"/>
-        <activity android:name=".ui.ConexionAAHCActivity">
-
-        </activity>
-        <activity android:name=".ui.ConexionAsincronaActivity">
-
-        </activity>
-        <activity android:name=".ui.ConexionHTTPActivity"/>
-        <activity android:name=".ui.ConexionVolleyActivity">
+        <activity android:name=".ui.main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ui.DescargaImagenesArchivosActivity"/>
-        <activity android:name=".ui.SubirArchivosActivity"/>
+        <activity android:name=".ui.archivos.CodificacionActivity"/>
+        <activity android:name=".ui.archivos.AdministradorArchivosActivity"/>
+        <activity android:name=".ui.conexion.ConexionAAHCActivity"/>
+        <activity android:name=".ui.conexion.ConexionAsincronaActivity"/>
+        <activity android:name=".ui.conexion.ConexionHTTPActivity"/>
+        <activity android:name=".ui.conexion.ConexionVolleyActivity"/>
+        <activity android:name=".ui.conexion.DescargaActivity"/>
+        <activity android:name=".ui.conexion.SubirArchivosActivity"/>
     </application>
 
 </manifest>

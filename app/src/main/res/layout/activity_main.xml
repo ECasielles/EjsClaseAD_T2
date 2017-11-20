@@ -5,31 +5,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.usuario.ejerciciosad_t2.ui.MainActivity"
+    tools:context="com.example.usuario.ejerciciosad_t2.ui.main.MainActivity"
     tools:layout_editor_absoluteY="81dp"
     >
-
 
     <Button
         android:id="@+id/btnCodificacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="24dp"
+        android:onClick="onClick"
+        android:text="Codificacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Codificacion"
-        android:onClick="onClick"
         />
-
     <Button
         android:id="@+id/btnAdminFicheros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="@+id/btnCodificacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCodificacion"
         android:text="Administrador de ficheros"
         android:onClick="onClick"
         />
+    <Button
+        android:id="@+id/btnAahc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdminFicheros"
+        android:text="Conexión AACH"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btnAsincrona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAahc"
+        android:text="Conexión Asíncrona"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btnVolley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAsincrona"
+        android:text="Conexión Volley"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btnDescarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolley"
+        android:text="Descarga de imágenes"
+        android:onClick="onClick"
+        />
+    <Button
+        android:id="@+id/btnSubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDescarga"
+        android:text="Subir archivos"
+        android:onClick="onClick"
+        />
+
 </android.support.constraint.ConstraintLayout>

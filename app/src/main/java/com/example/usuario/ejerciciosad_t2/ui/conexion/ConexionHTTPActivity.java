@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2.ui;
+package com.example.usuario.ejerciciosad_t2.ui.conexion;
 
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -57,4 +57,5 @@ public class ConexionHTTPActivity extends AppCompatActivity implements View.OnCl
             txvResultado.setText("Duración: " + String.valueOf(fin - inicio) + " milisegundos");
         }
     }
+
 }

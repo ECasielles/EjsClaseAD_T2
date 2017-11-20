@@ -1,4 +1,4 @@
-package com.example.usuario.ejerciciosad_t2.ui;
+package com.example.usuario.ejerciciosad_t2.ui.conexion;
 
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -10,7 +10,6 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.NetworkResponse;
@@ -20,15 +19,14 @@ import com.android.volley.Response;
 import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.usuario.ejerciciosad_t2.R;
 
 import com.android.volley.RequestQueue;
+import com.example.usuario.ejerciciosad_t2.utils.MySingleton;
 
 import java.io.UnsupportedEncodingException;
 
 public class ConexionVolleyActivity extends AppCompatActivity implements View.OnClickListener {
-
     public static final String TAG = "MyTag";
     EditText edtUrl;
     Button btnConectar;
@@ -46,12 +44,12 @@ public class ConexionVolleyActivity extends AppCompatActivity implements View.On
         btnConectar.setOnClickListener(this);
         webvWeb = (WebView) findViewById(R.id.webvWeb);
         txvResultado = (TextView) findViewById(R.id.txvResultado);
+        mRequestQueue = MySingleton.getInstance(this.getApplicationContext()).getRequestQueue();
     }
     @Override
     public void onClick(View view) {
         inicio = System.currentTimeMillis();
-        final String url;
-        //mRequestQueue = Volley.newRequestQueue(this);
+        String url;
         if (view == btnConectar) {
             url = edtUrl.getText().toString();
             makeRequest(url);
@@ -60,7 +58,7 @@ public class ConexionVolleyActivity extends AppCompatActivity implements View.On
     public void makeRequest(String url) {
         final String enlace = url;
         // Instantiate the RequestQueue.
-        mRequestQueue = Volley.newRequestQueue(this);
+        //mRequestQueue = Volley.newRequestQueue(this);
 
         final ProgressDialog progreso = new ProgressDialog(this);
         progreso.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -114,7 +112,6 @@ public class ConexionVolleyActivity extends AppCompatActivity implements View.On
         // Add the request to the RequestQueue.
         mRequestQueue.add(stringRequest);
     }
-
     @Override
     protected void onStop() {
         super.onStop();
