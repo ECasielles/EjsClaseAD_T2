@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.usuario.ejerciciosad_t2.ui.conexion.SubirArchivosActivity"
+    android:orientation="vertical"
     >
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Información"
+        />
+    <EditText
+        android:id="@+id/edtFichero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="perro.jpg"
+        />
+    <Button
+        android:id="@+id/btnSubida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subir"
+        />
+
+
+</LinearLayout>

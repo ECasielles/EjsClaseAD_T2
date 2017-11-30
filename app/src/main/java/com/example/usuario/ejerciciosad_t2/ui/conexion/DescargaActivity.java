@@ -64,8 +64,7 @@ public class DescargaActivity extends AppCompatActivity implements View.OnClickL
     private void descargaArchivo(String url) {
         imagen.setImageResource(R.drawable.placeholder);
         final ProgressDialog progreso = new ProgressDialog(this);
-        File miFichero = new File(Environment.getExternalStorageDirectory().getAbsoluteFile(),
-                url.substring(url.lastIndexOf('/')));
+        File miFichero = new File(Environment.getExternalStorageDirectory().getAbsolutePath());
 
         //RestClient tiene el método que permite hacer el guardado a fichero asíncrono
         RestClient.get(url, new FileAsyncHttpResponseHandler(miFichero) {

@@ -15,7 +15,7 @@
         android:layout_marginBottom="18dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="https://i.imgur.com/tGbaZCY.jpg"
+        android:text="http://192.168.3.57/acceso/picasso/perro.jpg"
         app:layout_constraintBottom_toTopOf="@+id/descargarImagen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
