@@ -23,7 +23,7 @@ import cz.msebera.android.httpclient.Header;
 public class SubirArchivosActivity extends AppCompatActivity {
 
     TextView informacion;
-    EditText texto;
+    EditText texto, edtPwd;
     Button btnSubir;
 
     @Override
@@ -32,6 +32,7 @@ public class SubirArchivosActivity extends AppCompatActivity {
         setContentView(R.layout.activity_subir_archivos);
         informacion = (TextView) findViewById(R.id.txvInfo);
         texto = (EditText) findViewById(R.id.edtFichero);
+        edtPwd = (EditText) findViewById(R.id.edtPassword);
         btnSubir = (Button) findViewById(R.id.btnSubida);
         btnSubir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,6 +51,7 @@ public class SubirArchivosActivity extends AppCompatActivity {
         Boolean existe = true;
         myFile = new File(Environment.getExternalStorageDirectory(), fichero);
         RequestParams params = new RequestParams();
+        params.put("password", edtPwd.getText().toString());
         try {
             params.put("fileToUpload", myFile);
         } catch (FileNotFoundException e) {

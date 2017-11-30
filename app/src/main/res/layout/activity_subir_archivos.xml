@@ -21,6 +21,13 @@
         android:layout_height="wrap_content"
         android:text="perro.jpg"
         />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textVisiblePassword"
+        android:text="123"
+        />
     <Button
         android:id="@+id/btnSubida"
         android:layout_width="wrap_content"
